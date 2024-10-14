@@ -127,6 +127,9 @@ It is a modular application, and some modules are installed by default. It will 
   * Bootstrap 5, CoreUI
   * Fontawesome 6
   * Dark Mode
+
+
+
 * Frontend Theme
   * Tailwind
   * Fontawesome 6
@@ -161,7 +164,7 @@ Follow the steps mentioned below to install and run the project. You may find mo
 
 1. Open the terminal and run the following command, this will download and install the `Laravel Starter` and run the post-installation commands. 
 ```bash
-composer create-project nasirkhan/laravel-starter
+composer create-project hustlersfather/laravel-starter
 ```
 2. The default database is `sqlite`, if you want to change please update the database settings at `.env` file
 3. To create a link from the storage directory, run the following command from the project root:
