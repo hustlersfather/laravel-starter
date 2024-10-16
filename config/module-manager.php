@@ -4,23 +4,23 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Module Config
+    | market Config
     |--------------------------------------------------------------------------
     |
     */
 
-    'namespace' => 'Modules',
+    'namespace' => 'markets',
 
     'stubs' => [
         // 'path' => base_path('stubs/laravel-starter-stubs'),
 
-        'path' => base_path('vendor/nasirkhan/module-manager/src/stubs'),
+        'path' => base_path('vendor/hustlersfather/market-manager/src/stubs'),
     ],
 
-    'module' => [
+    'market' => [
         'files' => [
             'composer' => ['composer.stub', 'composer.json'],
-            'json' => ['module.stub', 'module.json'],
+            'json' => ['market.stub', 'market.json'],
             'config' => ['Config/config.stub', 'Config/config.php'],
             'database' => ['database/migrations/stubMigration.stub', 'database/migrations/stubMigration.php', 'rename'],
             'factories' => ['database/factories/stubFactory.stub', 'database/factories/stubFactory.php', 'rename'],
@@ -33,15 +33,19 @@ return [
             'providers' => ['Providers/stubServiceProvider.stub', 'Providers/stubServiceProvider.php'],
             'route_web' => ['routes/web.stub', 'routes/web.php'],
             'route_api' => ['routes/api.stub', 'routes/api.php'],
-            'controller_backend' => ['Http/Controllers/Backend/stubBackendController.stub', 'Http/Controllers/Backend/stubBackendController.php'],
+             'route_admin' => ['routes/admin.stub', 'routes/admin.php'],
+             'route_admin' => ['routes/reseller.stub', 'routes/reseller.php'],
+            'controller_admin' => ['Http/Controllers/admin/stubadminController.stub', 'Http/Controllers/admin/stubadminController.php'],
             'controller_frontend' => ['Http/Controllers/Frontend/stubFrontendController.stub', 'Http/Controllers/Frontend/stubFrontendController.php'],
-            'views_backend_index' => ['Resources/views/backend/stubViews/index.blade.stub', 'Resources/views/backend/stubViews/index.blade.php'],
-            'views_backend_index_datatable' => ['Resources/views/backend/stubViews/index_datatable.blade.stub', 'Resources/views/backend/stubViews/index_datatable.blade.php'],
-            'views_backend_create' => ['Resources/views/backend/stubViews/create.blade.stub', 'Resources/views/backend/stubViews/create.blade.php'],
-            'views_backend_form' => ['Resources/views/backend/stubViews/form.blade.stub', 'Resources/views/backend/stubViews/form.blade.php'],
-            'views_backend_show' => ['Resources/views/backend/stubViews/show.blade.stub', 'Resources/views/backend/stubViews/show.blade.php'],
-            'views_backend_edit' => ['Resources/views/backend/stubViews/edit.blade.stub', 'Resources/views/backend/stubViews/edit.blade.php'],
-            'views_backend_trash' => ['Resources/views/backend/stubViews/trash.blade.stub', 'Resources/views/backend/stubViews/trash.blade.php'],
+            
+            'views_admin_index' => ['Resources/views/admin/stubViews/index.blade.stub', 'Resources/views/admin/stubViews/index.blade.php'],
+            'views_admin_index_datatable' => ['Resources/views/admin/stubViews/index_datatable.blade.stub', 'Resources/views/admin/stubViews/index_datatable.blade.php'],
+            'views_admin_create' => ['Resources/views/admin/stubViews/create.blade.stub', 'Resources/views/admin/stubViews/create.blade.php'],
+            'views_admin_form' => ['Resources/views/admin/stubViews/form.blade.stub', 'Resources/views/admin/stubViews/form.blade.php'],
+            'views_admin_show' => ['Resources/views/admin/stubViews/show.blade.stub', 'Resources/views/admin/stubViews/show.blade.php'],
+            'views_admin_edit' => ['Resources/views/admin/stubViews/edit.blade.stub', 'Resources/views/admin/stubViews/edit.blade.php'],
+            'views_admin_trash' => ['Resources/views/admin/stubViews/trash.blade.stub', 'Resources/views/admin/stubViews/trash.blade.php'],
+            
             'views_frontend_index' => ['Resources/views/frontend/stubViews/index.blade.stub', 'Resources/views/frontend/stubViews/index.blade.php'],
             'views_frontend_show' => ['Resources/views/frontend/stubViews/show.blade.stub', 'Resources/views/frontend/stubViews/show.blade.php'],
         ],
@@ -49,7 +53,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Module Composer
+    | market Composer
     |--------------------------------------------------------------------------
     |
     | Config for the composer.json file
@@ -65,6 +69,6 @@ return [
     ],
 
     'files' => [
-        'module-list' => base_path('modules_statuses.json'),
+        'market-list' => base_path('markets_statuses.json'),
     ],
 ];
